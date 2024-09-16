@@ -1,0 +1,11 @@
+[package]
+name = "proxy"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+pingora = { git = "https://github.com/cloudflare/pingora" }
+pingora-proxy = { git = "https://github.com/cloudflare/pingora" }
+async-trait = "0.1"
+clap = { workspace = true }

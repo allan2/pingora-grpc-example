@@ -1,0 +1,9 @@
+[workspace]
+members = ["client", "server", "proxy"]
+resolver = "2"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros"] }
+tonic = { version = "0.12", features = ["tls"] }
+prost = "0.13"
+clap = { version = "4", features = ["derive"] }
